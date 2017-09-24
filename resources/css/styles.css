@@ -86,6 +86,15 @@ h2::after {
     margin: 0 auto;
 }
 
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 
 /* ----------------------------------------- */
 
@@ -173,16 +182,17 @@ h2::after {
 .btn:visited {
     display: block;
     float: left;
-    padding: 4px 10px;
+    padding: 6px 12px;
     margin-right: 15px;
     border-radius: 200px;
-    color: #fff;
     text-decoration: none;
     font-size: 90%;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .btn-call-to-action {
     background-color: #e67e22;
+    color: #fff;
 }
 
 .btn-call-to-action:hover {
@@ -191,10 +201,12 @@ h2::after {
 
 .btn-ghost {
     border: 1px solid #e67e22;
+    color: #e67e22;
 }
 
 .btn-ghost:hover {
     background-color: #bf6516;
+    color: #fff;
 }
 
 
@@ -426,7 +438,6 @@ h2::after {
 
 .feedback-section cite>span {
     display: inline-block;
-    /* vertical-align: middle; */
 }
 
 .feedback-section cite img {
@@ -435,4 +446,68 @@ h2::after {
     border-radius: 40px;
     vertical-align: middle;
     margin-right: 15px;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* Subscription Section */
+
+
+/* ----------------------------------------- */
+
+.subscriptions-section {
+    background-color: #f4f4f4;
+    /* line-height: 150%; */
+}
+
+.price-box div {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.price-box div:last-child {
+    border-bottom: 0;
+}
+
+.subscriptions-section ul {
+    list-style: none;
+}
+
+.subscriptions-section ul li {
+    padding: 5px;
+}
+
+.price-box {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    border-radius: 6px;
+    line-height: 160%;
+}
+
+.price-box a {
+    margin-left: 50%;
+    transform: translate(-50%);
+    vertical-align: center;
+}
+
+.price-month {
+    color: #e67e22;
+    font-size: 300%;
+    font-weight: 100;
+}
+
+.price-month span {
+    color: #e67e22;
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.price-meal {
+    font-size: 70%;
+    font-weight: 300;
+    /* margin-bottom: 15px; */
 }
